@@ -81,9 +81,9 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-	        new CoinAddress(NewCoinMain.get(),      new ServerAddress("178.62.30.50", 22000),
-                                                    new ServerAddress("178.62.30.50", 23000),
-													new ServerAddress("178.62.30.50", 24000)),
+	        new CoinAddress(NewCoinMain.get(),      new ServerAddress("http://www.eot.digital", 22000),
+                                                    new ServerAddress("http://www.eot.digital", 23000),
+													new ServerAddress("http://www.eot.digital", 24000)),
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.Coinomi.net", 5001),
                                                     new ServerAddress("btc-cce-2.Coinomi.net", 5001)),
             new CoinAddress(LitecoinMain.get(),     new ServerAddress("ltc-cce-1.Coinomi.net", 5002),
@@ -101,7 +101,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_MAIN.getCoinType(), "http://ltc.blockr.io/tx/info/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.NEWCOIN_MAIN.getCoinType(), "http://178.62.30.50:3622/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.NEWCOIN_MAIN.getCoinType(), "http://www.eot.digital:3622/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
