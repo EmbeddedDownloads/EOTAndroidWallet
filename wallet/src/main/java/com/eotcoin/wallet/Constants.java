@@ -81,9 +81,9 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-	        new CoinAddress(NewCoinMain.get(),      new ServerAddress("http://www.eot.digital", 22000),
-                                                    new ServerAddress("http://www.eot.digital", 23000),
-													new ServerAddress("http://www.eot.digital", 24000)),
+	        new CoinAddress(NewCoinMain.get(),      new ServerAddress("www.eot.digital", 22000),
+                                                    new ServerAddress("www.eot.digital", 23000),
+													new ServerAddress("www.eot.digital", 24000)),
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.Coinomi.net", 5001),
                                                     new ServerAddress("btc-cce-2.Coinomi.net", 5001)),
             new CoinAddress(LitecoinMain.get(),     new ServerAddress("ltc-cce-1.Coinomi.net", 5002),
@@ -94,7 +94,7 @@ public class Constants {
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
-		COINS_ICONS.put(CoinID.NEWCOIN_MAIN.getCoinType(), R.drawable.newcoin);
+		COINS_ICONS.put(CoinID.NEWCOIN_MAIN.getCoinType(), R.drawable.eotcoin);
         COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
 
