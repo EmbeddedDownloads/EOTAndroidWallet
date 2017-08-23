@@ -2,7 +2,7 @@ package com.eotcoin.wallet;
 
 import android.text.format.DateUtils;
 
-import com.eotcoin.core.coins.NewCoinMain;
+import com.eotcoin.core.coins.EOTCoinMain;
 import com.eotcoin.core.coins.BitcoinMain;
 import com.eotcoin.core.coins.CoinID;
 import com.eotcoin.core.coins.CoinType;
@@ -81,7 +81,7 @@ public class Constants {
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-	        new CoinAddress(NewCoinMain.get(),      new ServerAddress("www.eot.digital", 22000),
+	        new CoinAddress(EOTCoinMain.get(),      new ServerAddress("www.eot.digital", 22000),
                                                     new ServerAddress("www.eot.digital", 23000),
 													new ServerAddress("www.eot.digital", 24000)),
             new CoinAddress(BitcoinMain.get(),      new ServerAddress("btc-cce-1.Coinomi.net", 5001),
@@ -94,14 +94,14 @@ public class Constants {
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
-		COINS_ICONS.put(CoinID.NEWCOIN_MAIN.getCoinType(), R.drawable.eotcoin);
+		COINS_ICONS.put(CoinID.EOTCOIN_MAIN.getCoinType(), R.drawable.eotcoin);
         COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
         COINS_ICONS.put(CoinID.LITECOIN_MAIN.getCoinType(), R.drawable.litecoin);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_MAIN.getCoinType(), "http://ltc.blockr.io/tx/info/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.NEWCOIN_MAIN.getCoinType(), "http://www.eot.digital:3622/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.EOTCOIN_MAIN.getCoinType(), "http://www.eot.digital:3622/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -111,7 +111,7 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-			NewCoinMain.get(),
+			EOTCoinMain.get(),
             BitcoinMain.get(),
             LitecoinMain.get()
     );

@@ -5,9 +5,9 @@ import com.eotcoin.core.coins.families.BitFamily;
 /**
  * @author John L. Jegutanis
  */
-public class NewCoinMain extends CoinType {
-    private NewCoinMain() {
-        id = "newcoin.main";
+public class EOTCoinMain extends CoinType {
+    private EOTCoinMain() {
+        id = "eotcoin.main";
 
         addressHeader = 33;
         p2shHeader = 5;
@@ -27,8 +27,8 @@ public class NewCoinMain extends CoinType {
         signedMessageHeader = toBytes("EOTCOIN Signed Message:\n");
     }
 
-    private static NewCoinMain instance = new NewCoinMain();
-    public static synchronized NewCoinMain get() {
+    private static EOTCoinMain instance = new EOTCoinMain();
+    public static synchronized EOTCoinMain get() {
         return instance;
     }
 }

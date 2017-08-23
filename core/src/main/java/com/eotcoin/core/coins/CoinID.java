@@ -24,7 +24,7 @@ import java.util.Set;
 public enum CoinID {
     BITCOIN_MAIN(BitcoinMain.get()),
     LITECOIN_MAIN(LitecoinMain.get()),
-	NEWCOIN_MAIN(NewCoinMain.get()),
+	EOTCOIN_MAIN(EOTCoinMain.get()),
     ;
 
     private static List<CoinType> types;
