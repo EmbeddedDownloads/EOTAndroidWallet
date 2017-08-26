@@ -8,6 +8,10 @@ android {
         exclude 'META-INF/NOTICE'
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     compileSdkVersion 21
     buildToolsVersion '25.0.0'
 

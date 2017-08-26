@@ -47,7 +47,7 @@ public class AddCoinsActivity extends BaseWalletActivity
     }
 
     @Override
-    public void onCoinSelection(Bundle args) {
+   public void onCoinSelection(Bundle args) {
         ArrayList<String> ids = args.getStringArrayList(Constants.ARG_MULTIPLE_COIN_IDS);
 
         // For new we add only one coin at a time
